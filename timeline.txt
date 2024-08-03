@@ -1,0 +1,45 @@
+installed django 
+installed drf
+add "rest_framework" in 'installed apps' in settings
+
+python manage.py startapp api -- created an app using this command which will run via drf 
+add "api" in 'installed apps' in settings
+    deleted this 
+
+- made three new apps - auth, users and search
+
+-> django models ---> python objects    -------serialisers 
+
+The first part of the serializer class defines the fields that get serialized/deserialized. The create() and update() methods define how fully fledged instances are created or modified when calling serializer.save()
+
+
+python manage.py makemigrations <app_name>  # Replace `<app_name>` with your app name (e.g., 'users')
+python manage.py migrate
+
+ ---- then access these tables from admin 
+
+ python manage.py createsuperuser
+
+ (utkarshjain, 1234)
+
+endpoints - 
+    /auth/register 
+    /auth/login 
+
+    /search/? 
+
+    /users/<user_id>
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+UPDATE THE LEARNINGS
+    REVISE WHATEVER YOU CODED WITH THE HELP OF AI 
+    MAKE NOTES 
+
+
+- generating JWT token in register and login views 
+    - accepting it as Authorization header - Bearer
+
+
+-> a decorator returns function as an object 
+ - functions are first class objects im python
